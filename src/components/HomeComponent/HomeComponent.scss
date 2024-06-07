@@ -1,0 +1,59 @@
+.homeComponent {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+  img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .homeInfo {
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    span {
+      font-size: 1.8rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+    .buttonContainer {
+      .downloadButton {
+        background-color: none;
+        background-color: black;
+        padding: 25px 35px;
+        border-radius: 100px;
+        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+        margin-right: 15px;
+        a {
+          color: white;
+        }
+      }
+      .contactButton {
+        background-color: none;
+        border: 1px solid;
+        color: black;
+        padding: 25px 35px;
+        border-radius: 100px;
+        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+      }
+    }
+    div {
+      margin: 10px;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
