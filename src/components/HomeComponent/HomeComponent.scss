@@ -1,58 +1,92 @@
 .homeComponent {
   display: flex;
   justify-content: center;
-  height: 80vh;
   align-items: center;
+  height: 86vh;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
   img {
-    width: 30rem;
-    height: 30rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
   .homeInfo {
-    margin: 0 10rem;
+    margin-left: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    text-align: center;
+    width: 22rem;
+
     span {
       font-size: 1.8rem;
+      color: #666;
     }
+
     h1 {
       font-size: 3rem;
+      margin: 0.5rem 0;
     }
+
     p {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      color: #777;
+      margin-bottom: 1rem;
     }
+
     .buttonContainer {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
       .downloadButton {
-        background-color: none;
         background-color: black;
-        padding: 25px 35px;
-        border-radius: 100px;
-        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
-        margin-right: 15px;
-        a {
-          color: white;
-        }
+        padding: 0.8rem 1.5rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: transform 0.3s ease, color 0.3s ease;
+        color: white;
       }
+
+      .downloadButton:hover {
+        transform: scale(1.05);
+      }
+
       .contactButton {
-        background-color: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 30px;
         border: 1px solid;
-        color: black;
-        padding: 25px 35px;
-        border-radius: 100px;
-        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      .contactButton:hover {
+        transform: scale(1.05);
       }
     }
-    div {
-      margin: 10px;
-      a {
-        img {
-          width: 40px;
-          height: 40px;
-          margin: 0 10px;
-        }
+
+    .socialLinks {
+      display: flex;
+      gap: 1rem;
+
+      img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.1);
       }
     }
   }

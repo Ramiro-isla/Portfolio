@@ -30,7 +30,14 @@
         .navLink {
           font-size: 1.4rem;
           color: rgb(154, 154, 154);
-          transition: all 0.8s;
+          transition: all 0.4s ease-in-out;
+
+          &.active {
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-underline-offset: 0.5rem;
+          }
 
           &:hover {
             color: black;
@@ -113,6 +120,11 @@
             color: black;
             text-decoration: none;
             transition: all 0.3s ease-in-out;
+
+            &.active {
+              color: black;
+              font-weight: bold;
+            }
           }
         }
       }

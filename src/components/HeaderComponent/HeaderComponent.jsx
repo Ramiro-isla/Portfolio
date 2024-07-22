@@ -1,12 +1,17 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./HeaderComponent.scss";
 
 const HeaderComponent = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const getLinkClass = (path) => {
+    return location.pathname === path ? "navLink active" : "navLink";
   };
 
   return (
@@ -17,22 +22,22 @@ const HeaderComponent = () => {
         </Link>
         <ul>
           <li>
-            <Link to="/About" className="navLink">
+            <Link to="/About" className={getLinkClass("/About")}>
               About
             </Link>
           </li>
           <li>
-            <Link to="/Experience" className="navLink">
+            <Link to="/Experience" className={getLinkClass("/Experience")}>
               Experience
             </Link>
           </li>
           <li>
-            <Link to="/Projects" className="navLink">
+            <Link to="/Projects" className={getLinkClass("/Projects")}>
               Projects
             </Link>
           </li>
           <li>
-            <Link to="/Contact" className="navLink">
+            <Link to="/Contact" className={getLinkClass("/Contact")}>
               Contact
             </Link>
           </li>
@@ -55,22 +60,38 @@ const HeaderComponent = () => {
 
           <ul className={`menuLinks ${menuOpen ? "open" : ""}`}>
             <li>
-              <Link to="/About" className="navLink" onClick={toggleMenu}>
+              <Link
+                to="/About"
+                className={getLinkClass("/About")}
+                onClick={toggleMenu}
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/characters" className="navLink" onClick={toggleMenu}>
+              <Link
+                to="/Experience"
+                className={getLinkClass("/Experience")}
+                onClick={toggleMenu}
+              >
                 Experience
               </Link>
             </li>
             <li>
-              <Link to="/about" className="navLink" onClick={toggleMenu}>
+              <Link
+                to="/Projects"
+                className={getLinkClass("/Projects")}
+                onClick={toggleMenu}
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link to="/about" className="navLink" onClick={toggleMenu}>
+              <Link
+                to="/Contact"
+                className={getLinkClass("/Contact")}
+                onClick={toggleMenu}
+              >
                 Contact
               </Link>
             </li>
