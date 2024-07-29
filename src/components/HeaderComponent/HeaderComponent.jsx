@@ -44,13 +44,13 @@ const HeaderComponent = () => {
         </ul>
       </nav>
 
-      <nav className="hamburguerNav">
+      <nav className="hamburgerNav">
         <Link className="logo" to="/">
           Ramiro Isla
         </Link>
-        <div className="hamburguerMenu">
+        <div className="hamburgerMenu">
           <div
-            className={`hamburguerIcon ${menuOpen ? "open" : ""}`}
+            className={`hamburgerIcon ${menuOpen ? "open" : ""}`}
             onClick={toggleMenu}
           >
             <span></span>

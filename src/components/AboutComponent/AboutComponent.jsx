@@ -1,6 +1,6 @@
 import React from "react";
-import ExperienceIcon from "../../img/experience.png";
-import EducationIcon from "../../img/education.png";
+import ExperienceIcon from "../../assets/img/experience.png";
+import EducationIcon from "../../assets/img/education.png";
 import "./AboutComponent.scss";
 
 const AboutComponent = () => {
@@ -31,13 +31,13 @@ const AboutComponent = () => {
               cada tarea. Estoy entusiasmado por compartir mi trabajo contigo y
               explorar posibles colaboraciones.
             </p>
-            <p className="infoProfile">¡Gracias por visitar mi portafolio!</p>
+            <p className="infoProfile">¡Gracias por visitar mi portfolio!</p>
           </div>
           <div className="aboutInfo">
             <div>
               <img src={ExperienceIcon} alt="experience icon" />
               <h3>Experience</h3>
-              <p>1 Year</p>
+              <p>Packar - 1 Year (July 2023 - June 2024)</p>
               <p>Frontend Developer</p>
             </div>
             <div>

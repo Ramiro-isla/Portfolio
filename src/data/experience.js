@@ -1,54 +1,57 @@
-import checkmark from "../img/checkmark.png";
+import HTML from "../assets/icons/html5.svg";
+import CSS from "../assets/icons/css3.svg";
+import JavaScript from "../assets/icons/javascript.svg";
+import SASS from "../assets/icons/sass.svg";
+import TypeScript from "../assets/icons/typescript.svg";
+import Angular from "../assets/icons/angular.svg";
+import React from "../assets/icons/react.svg";
+import ReactNative from "../assets/icons/react-native.svg";
+import Vue from "../assets/icons/vuejs.svg";
+import Git from "../assets/icons/git.svg";
+import TailwindCss from "../assets/icons/tailwindcss.svg";
+import Bootstrap from "../assets/icons/bootstrap.svg";
 
 export default [
   {
-    img: checkmark,
+    img: HTML,
     tool: "HTML",
-    experience: "experienced",
   },
   {
-    img: checkmark,
+    img: CSS,
     tool: "CSS",
-    experience: "experienced",
   },
   {
-    img: checkmark,
+    img: JavaScript,
     tool: "JavaScript",
-    experience: "experienced",
   },
   {
-    img: checkmark,
+    img: SASS,
     tool: "SASS",
-    experience: "experienced",
   },
   {
-    img: checkmark,
+    img: TypeScript,
     tool: "TypeScript",
-    experience: "experienced",
   },
   {
-    img: checkmark,
+    img: Angular,
     tool: "Angular",
-    experience: "experienced",
   },
   {
-    img: checkmark,
+    img: React,
     tool: "React",
-    experience: "experienced",
   },
   {
-    img: checkmark,
+    img: ReactNative,
     tool: "React Native",
-    experience: "experienced",
   },
   {
-    img: checkmark,
+    img: Vue,
     tool: "Angular",
-    experience: "experienced",
   },
   {
-    img: checkmark,
+    img: Git,
     tool: "GIT",
-    experience: "experienced",
   },
+  { img: TailwindCss, tool: "TailwindCss" },
+  { img: Bootstrap, tool: "Bootstrap" },
 ];

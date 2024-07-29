@@ -1,7 +1,7 @@
 import React from "react";
-import emailIcon from "../../img/email.png";
-import LinkedInLogo from "../../img/linkedin.png";
-import GitHubLogo from "../../img/github.png";
+import emailIcon from "../../assets/img/email.png";
+import LinkedInLogo from "../../assets/img/linkedin.png";
+import GitHubLogo from "../../assets/img/github.png";
 import "./ContactComponent.scss";
 
 const ContactComponent = () => {
@@ -10,10 +10,9 @@ const ContactComponent = () => {
       <h2>Contact</h2>
       <div className="contentContainer">
         <p>
-          Si te ha gustado lo que has visto y te interesa mi trabajo, no dudes
-          en ponerte en contacto. Ya sea para una propuesta de proyecto,
-          una idea para una colaboración o simplemente quieras saber más sobre
-          lo que hago, estaré encantado de escucharte. 🙃
+          Si te ha gustado mi trabajo y deseas discutir una propuesta de proyecto,
+          colaborar en una iniciativa, o simplemente obtener más información
+          sobre mi experiencia y habilidades, estaré encantado de escucharte 🙃.
         </p>
         <div className="socialContainer">
           <div className="socialItems">

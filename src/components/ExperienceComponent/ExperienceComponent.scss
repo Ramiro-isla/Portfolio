@@ -2,25 +2,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 86vh;
-  background-color: #f7f7f7;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 80vh;
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+
   h2 {
     font-size: 1.8rem;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
   }
+
   .experienceList {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 30px;
-    border: 3px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
     width: 85%;
     height: 65vh;
+
     h3 {
       font-size: 1.5rem;
       margin-top: 40px;
     }
+
     .experienceCard {
       height: 70%;
       display: flex;
@@ -30,24 +33,25 @@
       flex-wrap: wrap;
       padding: 20px;
       gap: 20px;
-      div {
+
+      .experienceItem {
         display: flex;
-        align-items: flex-start;
-        padding: 10px 15px;
-        .checkmark {
-          width: 2.6rem;
-          height: 2.6rem;
+        align-items: center;
+        padding: 10px 30px;
+        flex-direction: column;
+
+        .toolIcon {
+          width: 6rem;
+          height: 6rem;
           padding: 10px 0px;
         }
-        div {
+
+        .toolDetails {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
 
           h4 {
-            font-size: 1.2rem;
-          }
-          p {
             font-size: 1.2rem;
           }
         }

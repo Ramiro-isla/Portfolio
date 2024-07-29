@@ -1,5 +1,5 @@
 import React from "react";
-import experience from "../../data/experience";
+import experienceData from "../../data/experience";
 import "./ExperienceComponent.scss";
 
 const ExperienceComponent = () => {
@@ -9,16 +9,15 @@ const ExperienceComponent = () => {
       <div className="experienceList">
         <h3>Frontend Developer</h3>
         <div className="experienceCard">
-          {experience.map((experience, index) => (
-            <div key={index}>
+          {experienceData.map((exp, index) => (
+            <div key={index} className="experienceItem">
               <img
-                src={experience.img}
-                alt={experience.tool}
-                className="checkmark"
+                src={exp.img}
+                alt={exp.tool}
+                className="toolIcon"
               />
-              <div>
-                <h4>{experience.tool}</h4>
-                <p>{experience.experience}</p>
+              <div className="toolDetails">
+                <h4>{exp.tool}</h4>
               </div>
             </div>
           ))}
@@ -29,3 +28,4 @@ const ExperienceComponent = () => {
 };
 
 export default ExperienceComponent;
+

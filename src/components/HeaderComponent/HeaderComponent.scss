@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   margin: 2rem 0;
-
+  background-color: whitesmoke;
   .desktopNav {
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@
     }
   }
 
-  .hamburguerNav {
+  .hamburgerNav {
     width: 100%;
     display: none;
     justify-content: space-evenly;
@@ -63,11 +63,11 @@
       color: rgb(59, 59, 59);
     }
 
-    .hamburguerMenu {
+    .hamburgerMenu {
       position: relative;
       display: inline-block;
 
-      .hamburguerIcon {
+      .hamburgerIcon {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -85,13 +85,13 @@
         &.open {
           span {
             &:first-child {
-              transform: rotate(45deg) translate(10px, 5px);
+              transform: rotate(45deg) translate(5px, 5px);
             }
             &:nth-child(2) {
               opacity: 0;
             }
             &:last-child {
-              transform: rotate(-45deg) translate(10px, -5px);
+              transform: rotate(-45deg) translate(5px, -5px);
             }
           }
         }
@@ -137,7 +137,7 @@
     .desktopNav {
       display: none;
     }
-    .hamburguerNav {
+    .hamburgerNav {
       display: flex;
     }
   }

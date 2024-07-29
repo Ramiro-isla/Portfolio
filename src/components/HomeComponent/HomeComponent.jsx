@@ -1,9 +1,8 @@
-import React from "react";
 import "./HomeComponent.scss";
-import ProfileFoto from "../../img/Profile-foto.jpeg";
+import ProfileFoto from "../../assets/img/Profile-foto.jpeg";
 import { Link } from "react-router-dom";
-import LinkedInLogo from "../../img/linkedin.png";
-import GitHubLogo from "../../img/github.png";
+import LinkedInLogo from "../../assets/img/linkedin.png";
+import GitHubLogo from "../../assets/img/github.png";
 
 const HomeComponent = () => {
   return (
@@ -22,16 +21,10 @@ const HomeComponent = () => {
           </Link>
         </div>
         <div className="socialLinks">
-          <a
-            href="https://www.linkedin.com/in/ramiro-alfonso/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/ramiro-alfonso/" target="_blank">
             <img src={LinkedInLogo} alt="LinkedIn Logo" />
           </a>
-          <a
-            href="https://github.com/Ramiro-isla"
-            target="_blank"
-          >
+          <a href="https://github.com/Ramiro-isla" target="_blank">
             <img src={GitHubLogo} alt="GitHub Logo" />
           </a>
         </div>
