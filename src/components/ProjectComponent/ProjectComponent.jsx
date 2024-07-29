@@ -12,15 +12,23 @@ const ProjectComponent = () => {
           <div key={index} className="projectsCard">
             <img src={project.image} alt={`Screenshot of ${project.description}`} />
             <div className="projectInfo">
-              <div className="tools container">
                 <ToolsComponent tools={project.tools} />
-              </div>
               <p>{project.description}</p>
               <div className="linkContainer">
-                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                <a 
+                  href={project.githubLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label={`View code for ${project.description}`}
+                >
                   <img src={project.githubIcon} alt="GitHub icon" /> Code
                 </a>
-                <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                <a 
+                  href={project.demoLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label={`View demo of ${project.description}`}
+                >
                   <img src={project.webIcon} alt="Web demo icon" /> Demo
                 </a>
               </div>

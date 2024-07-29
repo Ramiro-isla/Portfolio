@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   gap: 5px;
   margin-bottom: 20px;
+
   .toolCard {
     display: flex;
     align-items: center;
@@ -11,11 +12,13 @@
     border-radius: 30px;
     padding: 10px 20px;
     gap: 5px;
+
     .toolImage {
       width: 1rem;
       border-bottom: none;
       background: none;
     }
+
     .toolName {
       font-size: 11px;
       background: none;

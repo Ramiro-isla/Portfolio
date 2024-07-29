@@ -14,7 +14,7 @@
 .projectsList {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -49,7 +49,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      margin-top: 5px;
+      margin-top: 20px;
 
       a {
         display: flex;
@@ -58,15 +58,16 @@
         border: 1px solid;
         border-radius: 50px;
         color: #333;
-        transition: letter-spacing 0.3s ease;
+        transition: letter-spacing 0.3s ease-in;
 
         img {
           width: 1.4rem;
           margin-right: 8px;
           border-bottom: none;
         }
+
         &:hover {
-          letter-spacing: 1px;
+          letter-spacing: 2px;
         }
       }
     }
