@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 60%;
     justify-content: center;
     gap: 4rem;
 
@@ -54,6 +53,36 @@
           img {
             width: 2rem;
             margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contactContainer {
+    .contentContainer {
+      p {
+        width: 70%;
+        font-size: 1rem;
+        padding: 30px;
+      }
+
+      .socialContainer {
+        .socialItems {
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+
+          .emailIcon {
+            width: 2rem;
+          }
+
+          a {
+            img {
+              width: 1.5rem;
+            }
           }
         }
       }

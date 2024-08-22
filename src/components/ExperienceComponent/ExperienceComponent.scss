@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 80vh;
   box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
 
   h2 {
@@ -16,16 +15,14 @@
     align-items: center;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
-    max-width: 79rem;
-    min-height: 65vh;
-
+    width: 85%;
+    margin-bottom: 30px;
     h3 {
       font-size: 1.5rem;
       margin-top: 40px;
     }
 
     .experienceCard {
-      min-height: 40vh;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -60,3 +57,4 @@
     }
   }
 }
+

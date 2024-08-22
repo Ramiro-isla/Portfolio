@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
   box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
 
   h2 {
@@ -14,7 +13,6 @@
 .projectsList {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
 }
 
@@ -26,6 +24,7 @@
   border-radius: 10px;
   width: 20rem;
   overflow: hidden;
+  margin: 0 60px 50px 60px;
 
   img {
     width: 100%;
@@ -68,6 +67,21 @@
 
         &:hover {
           letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .projectsContainer {
+    .projectsCard {
+      width: 18rem;
+
+      .projectInfo {
+        p {
+          font-size: 14px;
+          width: 17rem;
         }
       }
     }

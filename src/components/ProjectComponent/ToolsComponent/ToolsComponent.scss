@@ -25,3 +25,17 @@
     }
   }
 }
+@media screen and (max-width: 320px) {
+  .toolsContainer {
+    .toolCard {
+      padding: 10px 15px;
+      .toolImage {
+        width: 14px;
+      }
+  
+      .toolName {
+        font-size: 11px;
+      }
+    }
+  }
+}

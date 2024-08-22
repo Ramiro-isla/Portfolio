@@ -14,7 +14,7 @@
 
     .logo {
       font-size: 2rem;
-      font-family: "Poppins", sans-serif;
+      text-decoration: none;
       color: rgb(59, 59, 59);
     }
 
@@ -36,14 +36,14 @@
             color: black;
             text-decoration: underline;
             text-decoration-color: black;
-            text-underline-offset: 0.5rem;
+            text-underline-offset: 0.2rem;
           }
 
           &:hover {
             color: black;
             text-decoration: underline;
             text-decoration-color: black;
-            text-underline-offset: 0.5rem;
+            text-underline-offset: 0.3rem;
             letter-spacing: 0.6px;
           }
         }
@@ -59,7 +59,7 @@
 
     .logo {
       font-size: 2rem;
-      font-family: "Poppins", sans-serif;
+      text-decoration: none;
       color: rgb(59, 59, 59);
     }
 
@@ -85,13 +85,13 @@
         &.open {
           span {
             &:first-child {
-              transform: rotate(45deg) translate(5px, 5px);
+              transform: rotate(45deg) translate(10px, 5px);
             }
             &:nth-child(2) {
               opacity: 0;
             }
             &:last-child {
-              transform: rotate(-45deg) translate(5px, -5px);
+              transform: rotate(-45deg) translate(10px, -5px);
             }
           }
         }
@@ -125,6 +125,24 @@
               color: black;
               font-weight: bold;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HeaderContainer {
+    .desktopNav {
+      .logo {
+        font-size: 1.6rem;
+      }
+      ul {
+        width: 70%;
+        li {
+          .navLink {
+            font-size: 1.2rem;
           }
         }
       }

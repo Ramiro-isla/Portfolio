@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 80vh;
+  justify-content: space-between;
+  height: 70vh;
   box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
   h2 {
     font-size: 1.8rem;
@@ -12,7 +13,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
     div {
       flex-direction: column;
       margin: 0 2rem;
@@ -45,6 +45,56 @@
         p {
           font-size: 1rem;
           margin: 5px 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutComponentContainer {
+    div {
+      display: flex;
+      flex-direction: column;
+      div {
+        margin: 0 1rem;
+        .infoProfile {
+          width: 95%;
+          text-align: center;
+          font-size: 1rem;
+        }
+      }
+      .aboutInfo {
+        div {
+          width: 17rem;
+          height: 8rem;
+          img {
+            width: 2.3rem;
+          }
+          h3 {
+            font-size: 1.3rem;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .aboutComponentContainer {
+    div {
+      div {
+        .infoProfile {
+          width: 90%;
+        }
+      }
+      .aboutInfo {
+        div {
+          width: 15rem;
+          margin-bottom: 30px;
         }
       }
     }

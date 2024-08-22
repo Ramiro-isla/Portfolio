@@ -64,8 +64,10 @@
       .contactButton {
         padding: 0.8rem 1.5rem;
         border-radius: 30px;
-        border: 1px solid;
+        border: 1px solid black;
+        color: black;
         font-size: 1rem;
+        text-decoration: none;
         transition: transform 0.3s ease;
         cursor: pointer;
       }
@@ -86,6 +88,43 @@
 
       img:hover {
         transform: scale(1.1);
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .homeComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    img {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    .homeInfo {
+      margin: 0;
+      display: flex;
+      width: 100%;
+      span {
+        font-size: 1.3rem;
+        color: #666;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin: 0.5rem 0;
+      }
+
+      p {
+        font-size: 1.3rem;
+        color: #777;
+        margin-bottom: 1rem;
+      }
+
+      .buttonContainer {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
