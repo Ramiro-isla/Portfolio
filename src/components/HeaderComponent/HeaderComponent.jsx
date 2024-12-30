@@ -1,104 +1,90 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./HeaderComponent.scss";
 
 const HeaderComponent = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const headerOptions = [
+    { name: "About", id: "about-section" },
+    { name: "Experience", id: "experience-section" },
+    { name: "Projects", id: "projects-section" },
+    { name: "Contact", id: "contact-section" },
+  ];
 
-  const getLinkClass = (path) => {
-    return location.pathname === path ? "navLink active" : "navLink";
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className="HeaderContainer">
-      <nav className="desktopNav">
-        <Link className="logo" to="/">
+    <header className="header-container">
+      <nav className="desktop-nav">
+        <Link className="logo" to="home-section" smooth={true} duration={500}>
           Ramiro Isla
         </Link>
-        <ul>
-          <li>
-            <Link to="/About" className={getLinkClass("/About")}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/Experience" className={getLinkClass("/Experience")}>
-              Experience
-            </Link>
-          </li>
-          <li>
-            <Link to="/Projects" className={getLinkClass("/Projects")}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="/Contact" className={getLinkClass("/Contact")}>
-              Contact
-            </Link>
-          </li>
+        <ul className={"menu-links"}>
+          {headerOptions.map(({ name, id }) => (
+            <li key={id}>
+              <Link
+                to={id}
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-95}
+                activeClass="active-link"
+                className="header-link"
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
 
-      <nav className="hamburgerNav">
-        <Link className="logo" to="/">
+      <nav className="hamburger-nav">
+        <Link
+          className="logo"
+          to="HomePage-section"
+          smooth={true}
+          duration={500}
+        >
           Ramiro Isla
         </Link>
-        <div className="hamburgerMenu">
-          <div
-            className={`hamburgerIcon ${menuOpen ? "open" : ""}`}
+        <div className="hamburger-menu">
+          <button
+            type="button"
+            className={`hamburger-icon ${menuOpen ? "open" : ""}`}
             onClick={toggleMenu}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            aria-label="Toggle navigation menu"
           >
             <span></span>
             <span></span>
             <span></span>
-          </div>
-
-          <ul className={`menuLinks ${menuOpen ? "open" : ""}`}>
-            <li>
-              <Link
-                to="/About"
-                className={getLinkClass("/About")}
-                onClick={toggleMenu}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/Experience"
-                className={getLinkClass("/Experience")}
-                onClick={toggleMenu}
-              >
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/Projects"
-                className={getLinkClass("/Projects")}
-                onClick={toggleMenu}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/Contact"
-                className={getLinkClass("/Contact")}
-                onClick={toggleMenu}
-              >
-                Contact
-              </Link>
-            </li>
+          </button>
+          <ul
+            id="mobile-menu"
+            className={`menu-links ${menuOpen ? "open" : ""}`}
+            aria-hidden={!menuOpen}
+          >
+            {headerOptions.map(({ name, id }) => (
+              <li key={id}>
+                <Link
+                  to={id}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-68}
+                  className="header-link"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 

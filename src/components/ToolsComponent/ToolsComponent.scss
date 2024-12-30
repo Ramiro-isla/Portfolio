@@ -1,9 +1,9 @@
-.toolsContainer {
+.tools-container {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
 
-  .toolCard {
+  .tool-card {
     display: flex;
     align-items: center;
     background-color: #333;
@@ -12,27 +12,29 @@
     padding: 10px 20px;
     gap: 5px;
 
-    .toolImage {
+    .tool-image {
       width: 1rem;
       border-bottom: none;
       background: none;
     }
 
-    .toolName {
+    .tool-name {
       font-size: 11px;
       background: none;
     }
   }
 }
-@media screen and (max-width: 320px) {
-  .toolsContainer {
-    .toolCard {
+@media (max-width: 431px) {
+  .tools-container {
+    display: flex;
+    justify-content: center;
+    .tool-card {
       padding: 10px 15px;
-      .toolImage {
+      .tool-image {
         width: 14px;
       }
   
-      .toolName {
+      .tool-name {
         font-size: 11px;
       }
     }

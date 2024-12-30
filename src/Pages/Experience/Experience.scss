@@ -1,0 +1,130 @@
+.experience-section {
+  background-color: #282828;
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 90vh;
+
+  .experience-header {
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: #007bff;
+        margin: 1rem auto 0;
+        border-radius: 2px;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: rgb(200, 200, 200);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+
+  .experience-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .experience-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #393939; 
+      border-radius: 8px;
+      border: 2px solid #444;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 150px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        border-color: rgb(154, 154, 154);
+      }
+
+      .tool-icon {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 1rem;
+      }
+
+      .tool-details {
+        h4 {
+          font-size: 1.1rem;
+          color: #e4e4e4;
+          margin: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .experience-header {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .experience-card {
+      gap: 1.5rem;
+
+      .experience-item {
+        width: 130px;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    .experience-header {
+      padding: 0 1rem;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    .experience-card {
+      .experience-item {
+        width: 100px;
+
+        .tool-icon {
+          width: 60px;
+          height: 60px;
+        }
+
+        .tool-details {
+          h4 {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}

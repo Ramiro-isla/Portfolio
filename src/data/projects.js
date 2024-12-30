@@ -5,13 +5,28 @@ import RickAndMorty from "../assets/img/rickAndmorty.png";
 import FilmFinder from "../assets/img/filmFinder.png";
 import TaskFlow from "../assets/img/Taskflow.png";
 import Calculator from "../assets/img/calculator.png";
+import CandleLe from "../assets/img/candle-le.png";
 import ReactLogo from "../assets/icons/react.svg";
 
 export default [
   {
+    image: CandleLe,
+    description:
+      "Calculadora para operaciones matemáticas básicas como suma, resta, multiplicación y división. Presenta una interfaz limpia y eficiente para una experiencia fluida.",
+    tools: [
+      { image: ReactLogo, name: "React" },
+      { image: ReactLogo, name: "React" },
+      { image: ReactLogo, name: "React" },
+    ],
+    githubLink: "https://github.com/Ramiro-isla/candle-le-app.git",
+    demoLink: "https://www.candle-le.es/",
+    githubIcon: GitHubIcon,
+    webIcon: WebIcon,
+  },
+  {
     image: CreateUsers,
     description:
-      "Formulario interactivo para crear y gestionar usuarios. Diseñé y codifiqué las funciones para registrar un nombre, edad e imagen, e implementé un sistema CRUD completo para administrar estos perfiles. Este proyecto permitió mejorar la eficiencia en la gestión de datos de usuario, proporcionando una interfaz segura y fácil de usar.",
+      "Formulario interactivo para crear y gestionar usuarios con funciones CRUD completas. Los usuarios pueden añadir un nombre, edad e imagen, con un diseño amigable para mejorar la experiencia de uso.",
     tools: [
       { image: ReactLogo, name: "React" },
       { image: ReactLogo, name: "React" },
@@ -25,7 +40,7 @@ export default [
   {
     image: RickAndMorty,
     description:
-      "Creé una página web con la API de Rick y Morty, incluyendo paginación y un buscador para explorar personajes. También añadí una función para guardar personajes en una lista de favoritos, mejorando la experiencia del usuario.",
+      "Página web basada en la API de Rick y Morty, con funciones como paginación, buscador y lista de favoritos para personajes. La interfaz está optimizada para explorar personajes fácilmente.",
     tools: [
       { image: ReactLogo, name: "React" },
       { image: ReactLogo, name: "React" },
@@ -39,7 +54,7 @@ export default [
   {
     image: FilmFinder,
     description:
-      "Aplicación de películas que permite ver más detalles de cada film al hacer clic en la tarjeta correspondiente. Incluye un buscador para encontrar fácilmente cualquier película en la base de datos.",
+      "Aplicación para buscar películas y ver detalles como título, descripción y puntuación. Incluye un buscador dinámico para encontrar películas específicas en una base de datos amplia.",
     tools: [
       { image: ReactLogo, name: "React" },
       { image: ReactLogo, name: "React" },
@@ -53,7 +68,7 @@ export default [
   {
     image: TaskFlow,
     description:
-      "Esta aplicación es similar a Trello, donde puedes gestionar tableros y tareas con flexibilidad. Permite realizar operaciones CRUD completas, editar datos, nombres de tableros, y mover tareas entre tableros arrastrándolas. Esto facilita una gestión intuitiva y dinámica de tus proyectos.",
+      "App tipo Trello para gestionar tareas y tableros. Ofrece operaciones CRUD, edición de tableros y tareas, y una funcionalidad de arrastrar y soltar para organizar proyectos de forma intuitiva.",
     tools: [
       { image: ReactLogo, name: "React" },
       { image: ReactLogo, name: "React" },
@@ -67,7 +82,7 @@ export default [
   {
     image: Calculator,
     description:
-      "Desarrollé una aplicación de calculadora que ofrece una interfaz intuitiva para realizar operaciones matemáticas básicas. Incluye funciones para sumar, restar, multiplicar y dividir, con una presentación clara y fácil de usar para una experiencia de usuario eficiente.",
+      "Calculadora para operaciones matemáticas básicas como suma, resta, multiplicación y división. Presenta una interfaz limpia y eficiente para una experiencia fluida.",
     tools: [
       { image: ReactLogo, name: "React" },
       { image: ReactLogo, name: "React" },

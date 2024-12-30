@@ -4,11 +4,11 @@ import "./ToolsComponent.scss";
 
 const ToolsComponent = ({ tools }) => {
   return (
-    <div className="toolsContainer">
+    <div className="tools-container">
       {tools.map((tool, index) => (
-        <div key={index} className="toolCard" aria-label={tool.name}>
-          <img className="toolImage" src={tool.image} alt={tool.name} />
-          <span className="toolName">{tool.name}</span>
+        <div key={index} className="tool-card" aria-label={tool.name}>
+          <img className="tool-image" src={tool.image} alt={tool.name} />
+          <span className="tool-name">{tool.name}</span>
         </div>
       ))}
     </div>
